@@ -33,7 +33,7 @@ stages:
       inputs:
         containerRegistry: 'Container Registry Connection'
         command: 'buildAndPush'
-        Dockerfile: '''$(Build.SourcesDirectory)/Tailspin.SpaceGame.LeaderboardContainer/Dockerfile'''
+        Dockerfile: '$(Build.SourcesDirectory)/Tailspin.SpaceGame.LeaderboardContainer/Dockerfile'
         buildContext: '$(Build.Repository.LocalPath)'
         tags: |
           $(tag)
